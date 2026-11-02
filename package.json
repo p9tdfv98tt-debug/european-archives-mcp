@@ -1,0 +1,42 @@
+{
+  "name": "european-archives-mcp",
+  "version": "1.1.0",
+  "description": "Model Context Protocol (MCP) Server for European Historical Archives & Genealogy across Croatia (HR), Bulgaria (BG), and the United Kingdom (UK)",
+  "main": "dist/index.js",
+  "type": "module",
+  "bin": {
+    "european-archives-mcp": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "genealogy",
+    "archives",
+    "european-archives",
+    "croatia",
+    "bulgaria",
+    "united-kingdom",
+    "freereg",
+    "freebmd",
+    "genuki",
+    "isda",
+    "arhinet"
+  ],
+  "author": "Antigravity",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.6.1",
+    "cheerio": "^1.0.0",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.4",
+    "tsx": "^4.19.3",
+    "typescript": "^5.7.3"
+  }
+}
